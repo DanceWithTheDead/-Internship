@@ -13,7 +13,6 @@ class AuthController extends Controller
 {
     public function register(Request $request): JsonResponse
     {
-
         $validator = Validator::make($request->all(), [
             'first_name' => 'required|string|max:255',
             'last_name' => 'required|string|max:255',
